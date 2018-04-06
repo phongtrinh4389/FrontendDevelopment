@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="main.js" type="text/javascript"></script>
+    <title>Tabs Example</title>
+</head>
+
+<body onload="document.getElementById('default').click();">
+    <div class="tab">
+        <button id="default" class="tablinks" onclick="openCity(event, 'London')">London</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+        <button class="tablinks" onclick="openCity(event, 'Newyork')">Newyork</button>
+    </div>
+
+    <div id="London" class="tabcontent">
+
+        <h3>London</h3>
+        <p>This is London city</p>
+        <span class="close" onclick="this.parentNode.style.display='none'">&times;</span>
+
+    </div>
+
+    <div id="Paris" class="tabcontent">
+        <h3>Paris</h3>
+        <p>This is Paris city</p>
+        <span class="close" onclick="this.parentNode.style.display='none'">&times;</span>
+    </div>
+
+    <div id="Newyork" class="tabcontent">
+        <h3>Newyork</h3>
+        <p>This is Newyork city</p>
+        <span class="close" onclick="this.parentNode.style.display='none'">&times;</span>
+    </div>
+</body>
+
+</html>
